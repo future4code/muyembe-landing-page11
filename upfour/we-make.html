@@ -3,32 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="we-make.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <nav id="menu">
-      <!--MENU-->
 
-      <a href="we-are.html">Quem Somos</a>
-      <a href="we-make.html">O que fazemos</a>
-      <a href="place.html">Onde Estamos</a>
-    </nav>
+    <!-- MENU -->
+    <header>
+      <div class="logo">
+        
+      </div>
+      <div class="nav-bar">
+        <a href="we-are.html">Quem<br>Somos</a>
+        <a href="we-make.html">O que<br>fazemos</a>
+        <a href="place.html">Onde<br>Estamos</a>
+      </div>
+    </header>
 
       <!--CONTAINER-->
 
-    <main id="container">
+    <main id="container-wemake">
      
       <!--ESQUERDA-->
       <section id="section-left">
         <figure>
           <!-- LINK PARA A PÁGINA INICIAL ESTÁ NA LOGO -->
-          <a href="index.html"><img id="section-left-animation" src="img/upbox.png" /></a> 
+          <a href="index.html"><img id="section-left-animation" src="img/upbox.png" /></a>
         </figure>
       </section>
       <!--DIREITA-->
       <section id="section-right">
-        <article id="article-section-right">
           <h2>Nós Podemos Ajudar</h2>
 
           <p>
@@ -39,22 +43,20 @@
           </p>
 
           <ol>
-            <li>Crédito pessoal !</li>
+            <li>Crédito pessoal!</li>
             <li>Sistema de controle!</li>
             <li>Orientação financeira!</li>
           </ol>
-
+          
+          <h3>Quer saber mais?</h3>
           <form>
-            <h3>Quer saber mais?</h3>
-
-            <span>Email</span> <input type="text" />
+            <span>Email</span> 
+            <br>
+            <input type="text" />
             <br />
             <br />
-            <textarea rows="10" cols="40" maxlength="500">
-Vamos bater um papo :D</textarea
-            >
+            <textarea rows="6" maxlength="500">Vamos bater um papo :D</textarea>
           </form>
-        </article>
       </section>
     </main>
   </body>
