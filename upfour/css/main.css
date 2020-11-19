@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* MENU */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(31, 31, 36);
+}
+
+.logo {
+  padding: 16px;
+}
+
+.logo img {
+  width: 12rem;
+}
+
+.nav-bar {
+  padding: 16px 64px 16px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar a {
+  color: white;
+  padding: 16px;
+}
+.nav-bar a:hover {
+  color: rgb(210, 194, 176);
+}
+
+
+/* **************************** / PÁGINA INDEX / **************************** */
+/* CONTAINER */
+
+#container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://afronegocios.com/wp-content/uploads/2018/11/0_MAIN_Small_Biz_Monkey_Business_Images_shutterstock_372379228.jpg);
+}
+
+#container h1 {
+  color: black;
+}
+
+/* FOOTER */
+#social-media {
+  display: flex;
+  height: 94%;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* **************************** / PÁGINA ABOUT / **************************** */
+#container-about {
+  height: 90%;
+  background-image: url(../img/weare.png);
+  background-repeat: no-repeat;
+
+  background-size: 100% 100vh;
+}
+
+/* TEXTO/CONTAINER*/
+#about {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+#about div {
+  margin-top: 4rem;
+  width: 40rem;
+  height: 20rem;
+  color: white;
+  font-size: 1.5rem;
+}
+#about div p {
+  margin-top: 2rem;
+}
+
+/* **************************** / PÁGINA O QUE FAZEMOS / **************************** */
+/* CONTAINER */
+
+#container-wemake {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(31, 31, 36);
+  height: 100%;
+}
+
+/* ESQUERDA &
+ANIMAÇÃO */
+
+@keyframes figure-animation {
+  0% {
+    transform: scale(0.3);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(auto);
+  }
+}
+
+#section-left-animation {
+  animation-name: figure-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  height: 30rem;
+}
+
+/* DIREITA */
+
+#section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#section-right h2, p, ol, h3, form {
+  padding-bottom: 16px;
+}
+
+
+input,
+textarea {
+  font-size: 18px;
+}
+
+/* **************************** / PÁGINA ONDE ESTAMOS / **************************** */
+
+/* CONTAINER */
+
+#container-place {
+  background: rgb(31, 31, 36);
+  height: 91vh;
+}
+
+/* TITULO  */
+
+#container-place p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+/* GALERIA */
+
+#gallery {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gallery-images {
+  width: 16rem;
+  height: 14rem;
+  border-radius: 0.5rem;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #container {
+    max-height: 60%;
+  }
+
+
+  #gallery {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 128px;
+  }
+
+  #container-place {
+    padding-top: 32px;
+    height: 1000px;
+  }
+
+  #gallery figure {
+    padding-top: 32px;
+  }
+
+  #container-wemake {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 1600px;
+    padding-top: 16px;
+    padding-bottom:6rem;
+  }
+
+  #section-left-animation {
+    height: 16rem;
+    width:100%;
+    margin-top:2rem;
+  }
+ 
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 950px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #container {
+    max-height: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #gallery {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 128px;
+  }
+
+  #container-place {
+    padding-top: 32px;
+    height: 1000px;
+  }
+
+  #gallery figure {
+    padding-top: 32px;
+  }
+
+  #container-wemake {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 1600px;
+    padding-top: 16px;
+  }
+
+  #section-left-animation {
+    height: 20rem;
+  }
+
+}
